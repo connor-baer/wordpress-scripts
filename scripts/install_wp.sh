@@ -40,12 +40,8 @@ GLOBAL_FILE_PERMS=644    # `-rw-r--r--`
 WRITEABLE_DIR_PERMS=775  # `-rwxrwxr-x`
 WRITEABLE_FILE_PERMS=664 # `-rw-rw-r--`
 
-# Create the database.
-echo "Creating database ${LOCAL_DB_NAME}..."
-
-$LOCAL_MYSQL_CMD $LOCAL_DB_CREDS -e"CREATE DATABASE $LOCAL_DB_NAME"
-
 # Download WP Core.
+echo "Download and installing WordPress..."
 wp core download --path=${LOCAL_ROOT_PATH}
 
 # Generate the wp-config.php file
@@ -60,7 +56,7 @@ PHP
 wp core install --path=${LOCAL_ROOT_PATH} --url=${LOCAL_SITE_URL} --title=${LOCAL_DB_NAME} --admin_user=connorbaer --admin_password=developer --admin_email=connor.baer@me.com
 
 # Set project permissions
-echo "Setting base permissions for the project ${LOCAL_ROOT_PATH}"
+echo "Setting base permissions..."
 chown -R ${LOCAL_CHOWN_USER}:${LOCAL_CHOWN_GROUP} "${LOCAL_ROOT_PATH}"
 chmod -R ${GLOBAL_DIR_PERMS} "${LOCAL_ROOT_PATH}"
 find "${LOCAL_ROOT_PATH}" -type d -exec chmod $GLOBAL_DIR_PERMS {} \;

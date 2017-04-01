@@ -7,7 +7,7 @@ There are several scripts included in `wordpress-scripts`, each of which perform
 
 ### install_wp.sh
 
-The `install_wp.sh` script installs and configures a fresh WordPress instance, including a new database. The script also sets the WordPress install file permissions in a strict manner, to assist in hardening WordPress installs.
+The `install_wp.sh` script downloads and configures a fresh WordPress install. The script also sets the file permissions in a strict manner, to assist in hardening the WordPress install.
 
 All project variables are taken from the `.env.sh` file.
 
