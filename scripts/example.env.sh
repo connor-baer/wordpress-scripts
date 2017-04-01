@@ -74,7 +74,7 @@ REMOTE_SSH_PORT="22"
 
 # Remote path constants; paths should always have a trailing /
 REMOTE_ROOT_PATH="REPLACE_ME"
-REMOTE_ASSETS_PATH=${REMOTE_ROOT_PATH}"REPLACE_ME"
+REMOTE_ASSETS_PATH=${REMOTE_ROOT_PATH}${GLOBAL_ASSETS_PATH}
 
 # Remote database constants
 REMOTE_DB_NAME="REPLACE_ME"
