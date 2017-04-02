@@ -12,7 +12,7 @@
 # -- GLOBAL settings --
 
 # What to prefix the database table names with
-GLOBAL_DB_TABLE_PREFIX="wordpress_"
+GLOBAL_DB_TABLE_PREFIX="wp_"
 
 # The path of the `wp-admin` folder, relative to the root path; paths should always have a trailing /
 GLOBAL_WP_PATH="wp-admin/"

@@ -46,6 +46,9 @@ wp core download --path=${LOCAL_ROOT_PATH}
 
 # Generate the wp-config.php file
 wp core config --path=${LOCAL_ROOT_PATH} --dbname=${LOCAL_DB_NAME} --dbuser=${LOCAL_DB_USER} --dbpass=${LOCAL_DB_PASSWORD} --extra-php <<PHP
+define('SP_REQUEST_URL', ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST']);
+define('WP_SITEURL', SP_REQUEST_URL);
+define('WP_HOME', SP_REQUEST_URL);
 define('WP_DEBUG', true);
 define('WP_DEBUG_LOG', true);
 define('WP_DEBUG_DISPLAY', true);

@@ -79,7 +79,7 @@ All configuration is done in the `.env.sh` file, rather than in the scripts them
 
 All settings that are prefaced with `GLOBAL_` apply to **all** environments.
 
-`GLOBAL_DB_TABLE_PREFIX` is the WordPress database table prefix, usually `wordpress_`
+`GLOBAL_DB_TABLE_PREFIX` is the WordPress database table prefix, usually `wp_`
 
 `GLOBAL_WP_PATH` is the path of the `wp-admin` folder, relative to the root path. This should normally be `wp-admin/`, unless you have moved it elsewhere. Paths should always have a trailing `/`
 
