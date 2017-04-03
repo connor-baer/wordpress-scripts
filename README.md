@@ -241,4 +241,4 @@ For example, for my `local` dev setup:
 
 ...and it will use my stored, encrypted credentials instead of passing them in via commandline. You can also set this up on your remote server, and then set it via `REMOTE_DB_LOGIN_PATH`
 
-[Made by Connor](https://madebyconnor.co/)
+🐼 [Made by Connor](https://madebyconnor.co/)
