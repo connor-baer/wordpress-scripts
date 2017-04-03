@@ -1,6 +1,6 @@
 # WordPress-Scripts Changelog
 
-## 1.0.0 - 01.04.2017
+## 1.0.0 - 03.04.2017
 
 ### Added
 * Initial release

@@ -44,11 +44,5 @@ do
     echo "*** Synced assets from ${REMOTE_ASSETS_PATH}${DIR}"
 done
 
-# Make sure the WordPress files directory exists
-if [[ ! -d "${LOCAL_WP_FILES_PATH}" ]] ; then
-    echo "Creating WordPress files directory ${LOCAL_WP_FILES_PATH}"
-    mkdir -p "${LOCAL_WP_FILES_PATH}"
-fi
-
 # Normal exit
 exit 0
