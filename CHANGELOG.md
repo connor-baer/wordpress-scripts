@@ -1,5 +1,10 @@
 # WordPress-Scripts Changelog
 
+## Unreleased
+
+### Fixed
+* Fix unparsed error message.
+
 ## 1.1.0 - 03.04.2017
 
 ### Changed
